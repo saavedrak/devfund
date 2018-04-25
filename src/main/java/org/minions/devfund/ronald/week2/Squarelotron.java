@@ -1,4 +1,4 @@
-package org.minions.devfund.ronald;
+package org.minions.devfund.ronald.week2;
 
 /**
  * Squarelotron.
