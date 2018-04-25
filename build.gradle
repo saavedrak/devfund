@@ -25,6 +25,8 @@ checkstyle {
 // FindBugs configuration
 findbugs {
     toolVersion = '3.0.1'
+    ignoreFailures = true
+    findbugsTest.enabled = false
 }
 tasks.withType(FindBugs) {
     reports {
@@ -35,6 +37,8 @@ tasks.withType(FindBugs) {
 
 // PMD configuration
 pmd {
+    ignoreFailures = true
+    pmdTest.enabled = false
     ruleSets = ["java-basic", "java-braces", "java-unnecessary", "java-unusedcode", "java-strictexception"]
     toolVersion = '6.0.0'
 }
