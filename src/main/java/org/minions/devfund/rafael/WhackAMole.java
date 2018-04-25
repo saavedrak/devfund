@@ -1,6 +1,5 @@
 package org.minions.devfund.rafael;
 
-
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -17,7 +16,7 @@ public class WhackAMole {
     private static final char MOLE = 'M';
     private static final char WHACK = 'W';
     private static final char CELL = '*';
-    private static final int SCORE = 10;
+    private static final int SCORE_BASE = 10;
 
     //Scores
     private int score;
@@ -131,7 +130,7 @@ public class WhackAMole {
      */
     public void whack(int x, int y) {
         if (moleGrid[x][y] == MOLE) {
-            score += SCORE;
+            score += SCORE_BASE;
             molesLeft--;
             moleGrid[x][y] = WHACK;
         }
